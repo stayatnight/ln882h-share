@@ -119,7 +119,7 @@ static int ln_transfer_init(void)
         return -1;
     }
 
-    serial_write(fd, "Console init ok!\r\n", strlen("Console init ok!\r\n"));
+    serial_write(fd, "Console init ok!!\r\n", strlen("Console init ok!!\r\n"));
 
     return 0;
 }
