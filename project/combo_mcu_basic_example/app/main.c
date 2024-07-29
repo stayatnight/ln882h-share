@@ -15,7 +15,7 @@
 #include "ln_kv_api.h"
 #include "ln_at.h"
 #include "flash_partition_table.h"
-
+#include"myDimmingLib/dimmingLib.h"
 #include "ln_ble_app_kv.h"
 #include "usr_app.h"
 #include "ln_ble_app_default_cfg.h"
@@ -67,7 +67,8 @@ int main (int argc, char* argv[])
     //8.Init wifi stack.
     wifi_init();
     wlib_pvtcmd_output_cb_set(ln_at_vprintf);
-
+    if(MY_LIB_LAMP_VERSION==202)
+    LOG(LOG_LVL_INFO, "MY_LIB_LAMP_VERSION:202\r\n");
     //9.Init lwip stack.
     lwip_tcpip_init();
 
