@@ -71,7 +71,7 @@ int main (int argc, char* argv[])
     LOG(LOG_LVL_INFO, "MY_LIB_LAMP_VERSION:202\r\n");
     //9.Init lwip stack.
     lwip_tcpip_init();
-
+    LOG(LOG_LVL_INFO, "HELLLLLLLLLLLLLLLLLLLL\r\n");
     //10.Creat usr app task.
     creat_usr_app_task();
 

@@ -24,6 +24,8 @@ int main (int argc, char* argv[])
     SetSysClock();
     log_init();   
     LOG(LOG_LVL_INFO,"ln882H init! \n");
+    ln_delay_ms(100);
+    LOG(LOG_LVL_INFO,"ln882H init HELLO! \n");
     ln_show_reg_init();
 
     /****************** 2. 外设配置 ***********************/
